@@ -9,7 +9,7 @@ var uppercaseCheck;
 var numberCheck;
 var specialCheck;
 
-function determineLength(){
+function determineLength(){   //This was made to determine password legth
   passwordLength = prompt("Choose how many characters long you'd like your password to be (between 8-128 characters): ");
 
     if (passwordLength<8){
@@ -27,7 +27,7 @@ function determineLength(){
     return passwordLength;
 }
 
-function determineUppercase(){
+function determineUppercase(){ //This function was added to determin if the user wants upper or lower case
   uppercaseCheck = prompt("Do you want to include uppercase letters in your password? \n(Yes or No)");
     uppercaseCheck = uppercaseCheck.toLowerCase();
 
@@ -50,7 +50,7 @@ function determineUppercase(){
     return uppercaseCheck;
 }
 
-function determineNumbers(){
+function determineNumbers(){ // This function was added to see if the user wants to add numbers to the password
   numberCheck = prompt("Do you want to include numbers in your password? \n(Yes or No)");
     numberCheck = numberCheck.toLowerCase();
 
@@ -73,7 +73,7 @@ function determineNumbers(){
     return numberCheck;
 }
 
-function determineSpecial(){
+function determineSpecial(){ //This function was added to see if the user wants to add any special characters to the password. 
   specialCheck = prompt("Do you want to include special characters in your password? \n(Yes or No)");
     specialCheck = specialCheck.toLowerCase();
 
@@ -96,7 +96,7 @@ function determineSpecial(){
     return specialCheck;
 }
 
-function generatePassword(){
+function generatePassword(){ //This function combines all functions above. 
   determineLength();
   console.log(passwordLength);
   determineUppercase();
