@@ -12,3 +12,5 @@ Java Script was mostly used to make functions to make the app work.
 
 You can view the live page here.
 
+https://hypnotoad0010.github.io/Challenge-3-updated/
+
